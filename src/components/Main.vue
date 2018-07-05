@@ -113,13 +113,17 @@ export default {
 
 <style>
 .reg-title {
+  font-family: 'Supermercado One', cursive;
+  font-size: 25px;
   color: black;
 }
 a {
-  font-size: 20px;
+  font-family: 'Supermercado One', cursive;
+  font-size: 23px;
   color: black
 }
 a:link {
+  font-size: 25px;
   color:black;
   text-decoration: none;
 }
@@ -129,14 +133,15 @@ a:visited {
 .banner {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  background-color:gold;
+  background-color:peachpuff;
   background-image: url('../assets/fibonnaci.png');
   background-size: 550px;
   background-position: 5px 2px;
   background-repeat: no-repeat;
 }
 .body {
-  background-color: azure;
+  background-color:seashell;
+  background-image: url('../assets/fibonnaci.png');
   margin-top: 4em;
   margin-bottom: 4em;
 }
@@ -238,7 +243,7 @@ a:visited {
   height: 50px;
   cursor: pointer;
   transition: 0.1s all ease;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 300;
   color: #777;
   border-bottom: 1px solid #ccc;
@@ -274,6 +279,7 @@ a:visited {
   background-color: #b9e9ce;
   color: #759f87;
   border-bottom: 1px solid #759f87;
+  font-weight: 600;
 }
 .rad-button.good:hover {
   background-color: #caf3db;

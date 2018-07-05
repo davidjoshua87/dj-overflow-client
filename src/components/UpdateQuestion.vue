@@ -7,7 +7,7 @@
         <span style="color:red;font-size:10px;" v-show="errors.has('update-title')" class="help is-danger">{{ errors.first('update-title') }}</span>
       </p>
       <p type="Description">
-        <editor v-validate="'required'" name="update-description" :id="'update-description' + index" :value='question.description'></editor>
+        <editor api-key="e35okpdgs5wel4anlmpc3mambugjgzs7bye50qeitpamkhgj" v-validate="'required'" name="update-description" :id="'update-description' + index" :value='question.description'></editor>
         <span style="color:red;font-size:10px;" v-show="errors.has('update-description')" class="help is-danger">{{ errors.first('update-description') }}</span>
       </p>
       <div class="buttons">

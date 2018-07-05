@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="a-desc">
-          {{ ans.answer }}
+          <span v-html="ans.answer"></span>
           <!-- {{ ans }} -->
         </div>
         <div class="delbutton">
@@ -48,7 +48,7 @@
         </div>
         <div class="formsection">
           <div class="commentform">
-            <editor v-validate="'required'" name="comment" id="comment" v-model='comment' placeholder="Enter your comment here.."></editor>
+            <editor api-key="e35okpdgs5wel4anlmpc3mambugjgzs7bye50qeitpamkhgj" v-validate="'required'" name="comment" id="comment" v-model='comment' placeholder="Enter your comment here.."></editor>
             <br>
             <span style="color:red;font-size:10px;" v-show="errors.has('comment')" class="help is-danger">{{ errors.first('comment') }}</span>
           </div>

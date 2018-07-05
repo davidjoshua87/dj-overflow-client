@@ -6,7 +6,7 @@ import 'animate.css/animate.min.css'
 import 'semantic-ui-css/semantic.css'
 require('semantic-ui-css/semantic.js')
 
-let host = 'http://localhost:3000'
+let host = 'http://overflow-server.unguhiu.com/'
 
 Vue.prototype.$http = axios.create({
   baseURL: host

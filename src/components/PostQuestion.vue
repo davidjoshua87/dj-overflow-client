@@ -7,7 +7,7 @@
         <span style="color:red;font-size:10px;" v-show="errors.has('title')" class="help is-danger">{{ errors.first('title') }}</span>
       </p>
       <p type="Description">
-        <editor v-validate="'required'" name="description" id="input-description" v-model='description' placeholder="Enter your description here.."></editor>
+        <editor api-key="e35okpdgs5wel4anlmpc3mambugjgzs7bye50qeitpamkhgj" v-validate="'required'" name="description" id="input-description" v-model='description' placeholder="Enter your description here.."></editor>
         <span style="color:red;font-size:10px;" v-show="errors.has('description')" class="help is-danger">{{ errors.first('description') }}</span>
       </p>
       <div class="buttons">

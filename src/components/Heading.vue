@@ -2,7 +2,7 @@
 <div class="contain">
   <div class="header">
     <div class="logo">
-      <router-link to="/"><img src="@/assets/sologoedit.png" alt="" class="s" style="height:30px;"></router-link>
+      <router-link to="/"><img src="@/assets/sologoedit.png" alt="" class="s" style="height:30px;"><span><h2>DJ Overflow</h2></span></router-link>
     </div>
     <div class="items" v-if="!checkToken" style="margin-top:auto; margin-bottom:auto;">&zwnj;</div>
     <div class="items" v-else style="margin-top:auto; margin-bottom:auto;"><router-link to='/myquestions'> My Questions</router-link></div>
@@ -64,9 +64,13 @@ export default {
 </script>
 
 <style scoped>
-
 * {
   font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 40px;
 }
 
 .contain{
