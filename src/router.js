@@ -9,29 +9,28 @@ Vue.use(VeeValidate)
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Main',
-      component: Main
-    },
-    {
-      path: '/post/:id',
-      name: 'Post',
-      component: Post
-    },
-    {
-      path: '/myquestions',
-      name: 'MyQuestions',
-      component: MyQuestions,
-      beforeEnter: (to, from, next) => {
-        const status = localStorage.token
-        if (status === undefined) {
-          next('/')
-        } else {
-          next()
+    routes: [{
+            path: '/',
+            name: 'Main',
+            component: Main
+        },
+        {
+            path: '/post/:id',
+            name: 'Post',
+            component: Post
+        },
+        {
+            path: '/myquestions',
+            name: 'MyQuestions',
+            component: MyQuestions,
+            beforeEnter: (to, from, next) => {
+                const status = localStorage.token
+                if (status === undefined) {
+                    next('/')
+                } else {
+                    next()
+                }
+            }
         }
-      }
-    }
-  ]
+    ]
 })
