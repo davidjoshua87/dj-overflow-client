@@ -10,7 +10,7 @@
     "dependencies": {
         "@tinymce/tinymce-vue": "^1.0.8",
         "animate.css": "^3.6.1",
-        "axios": "^0.18.0",
+        "axios": "^0.21.1",
         "semantic-ui": "^2.4.2",
         "semantic-ui-css": "^2.3.1",
         "sweetalert2": "^7.20.10",
